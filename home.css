@@ -5,6 +5,9 @@
     background: orangered;
     color: white;
 }
+a{
+    text-decoration: none;
+}
 .nav i{
     margin-top: 20px;
 }
@@ -12,6 +15,7 @@
     display: flex;
     margin-left: 10px;
     color: white;
+    text-decoration: none;
 }
 #side-menu {
     height: 100%;
@@ -62,9 +66,6 @@ ul li {
     text-align: center;
     color: #c7f87d;
 }
-a{
-    text-decoration: none;
-}
 #ser{
     border-radius: 40px;
     width: 350px;
@@ -72,6 +73,9 @@ a{
     tab-size: 80px;
 }
 #mag{
+    height:60px;
+    width: 60px;
+    justify-items: center;
     margin-left: 30px;
     padding: 30px 20px;
     border: 1px solid white;
@@ -102,4 +106,89 @@ a{
 }
 #cat-list img:hover {
     transform: scale(0.85);
+}
+
+
+.categ {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.categ-head {
+    margin-left: 80px;
+}
+#underline {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #e16120;  
+    display: inline-block;  
+    margin-bottom: 30px;        
+}
+.categ-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.categ-items img {
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+    border-radius: 8px; 
+}
+.img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+.categories-details {
+    margin-top: 80px;
+    border: 2px solid #e16120;
+    width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px;
+    /* Center the div horizontally */
+    margin-left: auto;
+    margin-right: auto;
+}
+.category-name {
+    color: #e16120;
+    margin-bottom: 20px;
+}
+.description {
+    color: black;
+}
+
+
+
+.items-list {
+    margin-top: 80px;
+}
+.meal-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.meal {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.meal img {
+    width: 100%;
+}
+.meal:hover {
+    transform: scale(1.05);
+}
+.meal-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
