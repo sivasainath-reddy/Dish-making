@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
+    <title>meal-details</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -41,6 +41,8 @@
         </div>
     </header>
 
+
+
     <div class="banner">
         <div>
             <input type="text" placeholder="Search recipes here..." class="ban-input" id="meal-search">
@@ -52,32 +54,60 @@
 
     <div id="search-results" class="search-results"></div>
 
-    
-    
 
-    <!------------------------- categories description ----------------------------------->
-    <div class="categories-description">
+
+
+    <!---------------------- meal bar ----------------------------------->
+    <div class="bar">
         <div>
-            <h4 class="category-name"></h4>
-            <p class="description"></p>
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-angles-right"></i>
+             <!-- Meal Name placeholder -->
+        <span class="meal-bar-name"></span>
         </div>
     </div>
 
 
-    <!--------------------------- categories list ------------------------------------------>
-    <div class="categories-list">
-        <h4 class="categ-head"><span class="underline">MEAL</span>S</h4>
-        <div id="categories-items" class="categories-items">
-            <!-- Meals will be dynamically inserted here -->
+    <!-------------------- meals details ----------------------------------->
+    <div class="meal-container">
+        <h4 class="meal-head"><span class="underline">MEAL</span> DETAILS</h4>
+        <div class="meal-details">
+            <div class="meal-image">
+                <!-- Meal image will be injected here -->
+            </div>
+            <div class="meal-description">
+                <h2 class="meal-name"></h2>
+                <div class="meal-info">
+                    <p><b>CATEGORY: </b><span class="meal-category"></span></p>
+                    <p><b>Source: </b><a class="meal-source" target="_blank"></a></p>
+                </div>
+                <div class="meal-tags">
+                    <p><b>Tags: </b><span class="tags-list"></span></p>
+                </div>
+                <div class="ingredients-section">
+                    <h5>Ingredients:</h5>
+                    <div class="div-ingredients"></div>
+                </div>
+            </div>
+        </div>
+        <div class="measure-section">
+            <h3>Measure:</h3>
+            <div class="measure"></div>
+        </div>
+        <div class="instructions-section">
+            <h5>Instructions:</h5>
+            <div class="instructions"></div>
         </div>
     </div>
     
-    
+
+
+
     <div class="categories"></div>
         <h4 class="categ-head"><span class="underline">CATE</span>GORIES</h4>
         <div class="categ-items">
             <div>
-                <!-- <p class=".one">Beef</p> -->
+                <!-- <span class=".one">Beef</span> -->
                 <a href="category.html?category=Beef"><img class="categ-img" src="" alt="Beef"></a>
             </div>
             <div>
